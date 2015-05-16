@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Não existe desculpa!!!1</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/john.css" id="john_css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <section>
+                        <h1>Não existe desculpa!</h1>
+                        <br/>
+                        <p class="fragment fadein">
+                            "Como eu já fiz", "como eu vi fazerem","como eu faço"<br/>
+                            e "como eu gostaria de fazer".
+                        </p>
+                        <!--
+                        <p class="fragment fadein">
+                            <small>#mimimi #hatersgonnahate</small>
+                        </p>
+                        -->
+                    </section>
+
+                    <section>
+                        <h1><small class="lower">john@xxx:~$</small> whoami</h1>
+                        <p class="fragment fadein">John Murowaniecki ~ <a href="http://twitter.com/typeof_">@typeof_</a></p>
+                        <p class="fragment fadein">Senior dev & Tech Leader ~ <a href="http://encodeweb.com.br">Encodeweb.com.br</a></p>
+                        <br>
+                        <p class="fragment fadein">Clipper, Cobol, Fortran, C, Visual Basic 6, <strike>C#</strike>,</p>
+                        <p class="fragment fadein"><strike>Ruby</strike>, Python, Perl, PHP</p>
+                        <p class="fragment fadein">e JavaScript.</p>
+                    </section>
+
+                    <section>
+                        <h1><small class="lower">john@xxx:~$</small> history<small class="lower">| tail -n 13</small></h1>
+
+                        <p class="fragment fadein">
+                            Doubleleft, Joy Interactive, Webglobal, Onze.me, Box3, JPC (atualmente Solutio), Divex, Núcleo 49, Bits, Reweb,</p>
+                        <p class="fragment fadein">Instituto de Gestão e Tecnologia (IGTec) - Unilasalle,</p>
+                        <p class="fragment fadein">3 Batalhão de Suprimentos, Digital TI.</p>
+                    </section>
+
+                    <section>
+                        <h1><small class="lower">john@xxx:~$tail -f</small> $USER.log</h1>
+                        <p><img src="img/poop.gif" height="5%" class="fragment fadein" border="0" style="border:0;background:transparent"></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Código feio !== Ruim</h1>
+                        <h2 class="fragment fadein">Entregue >> Perfeito</h2>
+                        <h3 class="fragment fadein">1 na mão >> 2 voando</h3>
+                        <p class="fragment fadein">Código bonito não significa que o código seja bom.</p>
+                        <br/>
+                        <p class="fragment fadein">Mas geralmente é indicativo de qualidade.</p>
+                    </section>
+
+                    <section>
+                        <h2>Indentação consistente</h2>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">var code = this.code = (function some_bad_BAD_Practice_Example101 ( x ) {
+  return (x.sucks = function (x) { return true; /* sux once sux 4evr*/ },
+   x.code = x);
+}($));
+
+(function($_SESSION){
+    var a, b, c;
+    if ((typeof this.code === 'junk' || this.code.sucks()) && !$_SESSION.mambo_jambo)
+      {
+        n = 10;
+        for ( a=b=c = 1; a < 42 && this.code.sucks() && (a = b); b = c,c=a+b ) {
+            $_SESSION.push(a);
+        }
+    }
+    return $_SESSION;
+}([], this, code));</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Um passeio pelos Padrões/estilos de Indentação</h3>
+                        <!-- <p>E que belos tipo de aberração encontramos..</p> -->
+                        <p class="fragment fadein"><small>* Aos curiosos: todos os códigos dessa palestra estão disponíveis no GitHub.</small></p>
+                    </section>
+
+                    <section>
+                        <h3>Allman Style</h3>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">(function allman_style(used_by)
+{
+    Array.prototype.planchette = function ()
+    {
+        var element = parseInt(Math.random() * this.length),
+            value = this[element];
+        this.splice(element, 1);
+        return value;
+    }
+
+    for (var ouija = []; used_by.length; )
+    {
+        ouija.push(used_by.planchette())
+    }
+    return ouija.join(' ');
+}(['compulsive-obsessive', 'people', 'business', 'spiritualists', 'who', 'suffer']));</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Whitesmiths Style</h3>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">String((function whitesmiths_style(used_by)
+    {
+    var i, am = 4, it = [];
+
+    for (i in used_by)
+        {
+        it.push(String.fromCharCode(used_by.charCodeAt(i) + i % am));
+        }
+
+    return it.join('');
+    }
+    ("pdmmld,^rbfftdaqime+eugindqp")));</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Horstmann Style</h3>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">var Horstmann_style = function (used_by)
+{   var a = used_by.length, b, c = 0, d, e = 1, f = used_by.length;
+
+    for (;c < f; a += (b = used_by.charCodeAt(c)) % ((c++ + e) - (b - a)))
+    {   d = String(a).length;
+    }
+
+    if (a % (used_by.length - d - e) === d && a % (b - c) == d)
+    {   return a;
+    }
+  }('FREAKS OF .* KIND');
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Kernel K&R 1TBS Stroustrup BSD KNF Style</h3>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">[function Kernel_KnR_1TBS_Stroustrup_BSD_KNF_style_doing(used_by) {
+    var text = [],
+        when_you_have_enough = arguments.callee.name.substr(-5),
+        space = String(' ');
+
+    while (used_by.length) {
+        text.push((used_by.splice(0, 3)).join(space));
+    }
+
+    return text.join([,when_you_have_enough,,].join(space));
+}(['some', 'regular', 'people', 'awesome', 'developer', 'stuffs'])];</code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Flame war</h2>
+                        <img src="img/votacao.png">
+                        <p>Aqui está o <a href="http://www.terminally-incoherent.com/blog/2009/04/10/the-only-correct-indent-style/?dem_action=view&dem_poll_id=21">link da votação</a> e informações complementares sobre <a href="http://en.wikipedia.org/wiki/Indent_style">estilos de indentação</a></p>
+                    </section>
+
+                    <section>
+                        <h2>Não existe melhor estilo de indentação</h2>
+                        <p>O melhor padrão é aquele que for adotado por toda equipe e mantido até quando for necessário.</p>
+                    </section>
+
+                    <section>
+                        <h2>Não existe melhor ferramenta</h2>
+                        <p>Senão aquela que melhor se adequar a situação.</p>
+                    </section>
+
+                    <section>
+                        <h2>Sublime</h2>
+                        <img src="img/package-control-stats.png" width="80%">
+                        <p class="fragment fadein">JSLint, Alignment e Javascript Beautify &hearts;</p>
+                    </section>
+
+                    <section>
+                        <h2>Vim</h2>
+                        <img src="img/vim-awesome.png" width="80%">
+                        <p class="fragment fadein"><a href="https://github.com/maksimr/vim-jsbeautify">vim-JSBeauty</a>, <a href="https://github.com/scrooloose/nerdtree">NERDTree</a> &hearts; &hearts;</p>
+                    </section>
+
+                    <section>
+                        <h2>One liners</h2>
+                        <img src="img/wow.GIF" width="80%">
+                        <pre><code style="font-size: 18px; margin-top: 20px;">[function wow(such,h4x0r){var y,amaze;return arguments.callee.name}('much', 'doge')]</code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Impacto do código ininteligível</h2>
+                        <p class="fragment fadein">Refatoração</p>
+                        <p class="fragment fadein">Versionamento</p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h2>Obrigado pelos peixes</h2>
+                    </section>
+
+                    <section>
+                        <h2>Bônus</h2>
+                    </section>
+
+                    <section>
+                        <h2>gEdit</h2>
+                        <pre><code style="font-size: 18px; margin-top: 20px;">#!/usr/bin/env python
+import os
+import sys
+import tempfile
+
+h, tmpfile = tempfile.mkstemp()
+os.close(h)
+
+f = open(tmpfile, "w")
+f.write("%s\n." % sys.stdin.read())
+f.close()
+
+content = os.system("js-beautify %s"%(tmpfile))
+os.remove(tmpfile)</code></pre>
+                    </section>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/leap/leap.js', async: true }
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

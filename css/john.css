@@ -1,0 +1,8 @@
+.lower {
+	text-transform: lowercase !important;
+}
+
+
+body {
+	background: #000 url("../img/noise3.png") repeat !important;
+}
